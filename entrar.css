@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Fonte';
+    src: url(Fontes/Roboto-ThinItalic.ttf);
+    
+}
+
+
+
+a{
+    font-family: 'Fonte';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100S;
+}
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 1s;
+}
+.navbar a:hover::before {
+    width: 100%;
+
+}
+
+
+
+
+.caixa {
+    height: 200;
+    width: 380px;
+    background: transparent;
+    border: 2px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px ;
+    color: rgb(0, 255, 64);
+    border-radius: 10px;
+    padding: 0px 40px;
+
+}
+.DIV {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.Titulo {
+    color: rgb(216, 216, 224);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.nome,
+.sobrenome,
+.e-mail,
+.senha {
+    color: rgb(222, 234, 230);
+    padding: 5px;
+        
+}
+
+.legenda1,
+.legenda2,
+.legenda3,
+.legenda4,
+.legenda5 {
+    padding: 10px;
+    background-color: rgb(228, 234, 228);
+    height: 10px;
+
+    border-radius: 10px;
+    color: rgb(28, 21, 21);
+}
+button {
+    position: absolute;
+    top: 360px;
+    left: 140px;
+    height: 40px;
+    width: 100px;
+    border-radius: 130px;
+
+}
+
+body {
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background: url(fundo.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+img {
+    height: 40px;
+    width: 40px ;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    margin: 20px;
+}
+header img {
+    position:absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 4px;
+    left: 35px;
+}

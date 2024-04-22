@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Fonte';
+    src: url(Fontes/Roboto-ThinItalic.ttf);
+    
+}
+
+
+
+a{
+    font-family: 'Fonte';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100S;
+}
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 1s;
+}
+.navbar a:hover::before {
+    width: 100%;
+
+}
+.center {
+   text-align: center;
+}
+h2 {
+    font-family: 'fonte';
+    font-size: 30px;
+    color: green;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Fonte';
+}
+.container {
+    padding: 0px 200px;
+}
+.container2 {
+    position: relative;
+}
+div img {
+    position:absolute;
+    top: 400px;
+    left: 1000px;
+}
+footer img {
+    position:absolute;
+    top: 800px;
+    left: 1000px;
+}
+
+header img {
+    position:absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 4px;
+    left: 35px;
+}
+.barra-verde {
+   font-size: 40px;
+    color: green;
+}
+.campeonatos {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+
+
+.b {
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+    transition: 1s; 
+}
+.b:hover{
+    color: green;
+    transition: 0.1s;
+}
